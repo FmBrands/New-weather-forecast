@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: #878787;
+  font-size: 24px;
+  font: weight 100px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+form {
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+
+.overview {
+  margin-bottom: 20px;
+}
+.img {
+  padding: 0;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 20px;
+  border: 1px solid #bdc1c6;
+  border-radius: 5px;
+}
+.weather-temperature strong {
+  color: #212121;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 64px;
+}
+.weather-temperature img {
+  margin-right: 6px;
+  float: left;
+  height: 64px;
+  width: 64px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #878787;
+  font-size: 16px;
+  font-weight: 50px;
+  line-height: 19px;
+}
+
+li ::first-letter {
+  text-transform: capitalize;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+.weather-temperature .active {
+  color: #212121;
+  cursor: default;
+}
+.weather-temperature .active :hover {
+  text-decoration: none;
+}
