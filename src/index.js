@@ -31,8 +31,7 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
-      `
-              <div class="col-2">
+      `    <div class="col-2">
                 <div class="weather-forecast-date">${day} </div>
                 <img src="./sun.jpg" alt="sunny" width="42 px" />
                 <div class="weather-forecast-temperatures">
@@ -43,11 +42,9 @@ function displayForecast() {
             
           `;
   });
-
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
-
 function displayTemperature(response) {
   console.log(response.data);
   console.log(response.data.temperature);
