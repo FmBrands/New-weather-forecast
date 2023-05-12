@@ -35,13 +35,15 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
 
-  forcast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `    <div class="col-2">
+  forcast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `    <div class="col-2">
                 <div class="weather-forecast-date">${formatDay(
                   forecastDay.time
                 )} </div>
+              
                 <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${
                   forecastDay.condition.icon
                 }.png"
@@ -57,6 +59,7 @@ function displayForecast(response) {
               </div>
             
           `;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
